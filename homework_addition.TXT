@@ -1,0 +1,60 @@
+#Exercise1
+print('Enter your name, please')
+name = input()
+print('Enter your age, please')
+age = int(input())
+print(name,', your 100 BD be in ', 2019+(100-age),sep='')
+
+#Exercise2
+print('Enter number, please')
+number = int(input())
+if number % 2 == 1 :
+    print('Your number is odd')
+else:
+    print('Your number is even')
+
+#Exercise8
+print('Hello, lets start our game')
+print('Rock-R, Paper-P, Scissors-S')
+print('Enter your names, please')
+player1 = input('player1 :')
+player2 = input('player2 :')
+print('You can start')
+while(1):
+    step1 = input()
+    step2 = input()
+    if (step1 == 'R')&(step2 == 'S'):
+        print(player1, 'WIN!')
+        break
+    elif (step1 == 'S')&(step2 == 'R'):
+        print(player2, 'WIN!')
+        break
+    elif (step1 == 'R')&(step2 == 'P'):
+        print(player2, 'WIN!')
+        break
+    elif (step1 == 'P')&(step2 == 'R'):
+        print(player1, 'WIN!')
+        break
+    elif (step1 == 'P')&(step2 == 'S'):
+        print(player2, 'WIN!')
+        break
+    elif (step1 == 'S')&(step2 == 'P'):
+        print(player1, 'WIN!')
+        break
+
+
+#Exircise9
+import random
+print('Hello, lets start our game')
+print('Try to guess the number from 1 to 9')
+my_number = random.randint(1,10)
+print(my_number)
+his_number = int(input())
+while(my_number > his_number):
+    print('my_number > your_number')
+    his_number = int(input())
+while(my_number < his_number):
+    print('my_number < your_number')
+    his_number = int(input())
+if his_number == my_number:
+    print('YES! You are wright!')
